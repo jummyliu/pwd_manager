@@ -1,0 +1,104 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 滚动条背景、宽度 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background: transparent;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: $--color-scrollbar;
+}
+
+.el-row {
+  &.el-row--flex {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  > .el-col {
+    border-radius: $--border-radius-base;
+    padding-bottom: 20px;
+  }
+
+  .search-area {
+    text-align: left;
+  }
+
+  .table-area {
+    flex: 1;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  // width: 40px;
+  color: $--color-icon-noactive;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: $--color-icon;
+    background: $--color-background;
+  }
+}
+
+.confirm {
+  width: 100%;
+  top: 0;
+}
+
+/* 动画 */
+.fade-enter-active, .fade-leave-active {
+  transition: all .4s ease;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter-active, .slide-fade-leave-active {
+  transition: all .2s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateY(-5px);
+  opacity: 0;
+}
+
+.scale-fade-enter-active, .scale-fade-leave-active {
+  transition: all .4s ease;
+}
+.scale-fade-enter, .scale-fade-leave-to {
+  transform: scale(1.2);
+  opacity: 0;
+}
+
+.slide-left-fade-enter-active, .slide-left-fade-leave-active {
+  transition: all .2s ease;
+}
+.slide-left-fade-enter, .slide-left-fade-leave-to {
+  transform: translateX(-5px);
+  opacity: 0;
+}

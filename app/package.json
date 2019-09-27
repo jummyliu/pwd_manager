@@ -1,0 +1,12 @@
+{
+  "name": "pwd_manager",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "author": "",
+  "license": "",
+  "main": "./dist/main.js",
+  "dependencies": {
+    "sqlite3": "^4.1.0"
+  }
+}
