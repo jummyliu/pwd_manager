@@ -46,7 +46,7 @@
     "electron-rebuild": "^1.8.5",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.2",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-electron-webpack": "^1.1.4",
     "vue-cli-plugin-element": "^1.0.1",
